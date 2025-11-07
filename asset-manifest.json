@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.c7e34cd0.css",
-    "main.js": "/my-portfolio/static/js/main.bca9a9ce.js",
-    "static/media/Project3.png": "/my-portfolio/static/media/Project3.98de038b7370431d9f61.png",
-    "static/media/Chat-Vibe.png": "/my-portfolio/static/media/Chat-Vibe.a303fc62c71259005246.png",
-    "static/media/Project1.jpg": "/my-portfolio/static/media/Project1.f10e535f417d89bc4614.jpg",
-    "static/media/Me.jpg": "/my-portfolio/static/media/Me.e77033f16c72c19ae16c.jpg",
-    "index.html": "/my-portfolio/index.html",
-    "main.c7e34cd0.css.map": "/my-portfolio/static/css/main.c7e34cd0.css.map",
-    "main.bca9a9ce.js.map": "/my-portfolio/static/js/main.bca9a9ce.js.map"
+    "main.css": "/My-Portfolio/static/css/main.c7e34cd0.css",
+    "main.js": "/My-Portfolio/static/js/main.1ffee5da.js",
+    "static/media/Project3.png": "/My-Portfolio/static/media/Project3.98de038b7370431d9f61.png",
+    "static/media/Chat-Vibe.png": "/My-Portfolio/static/media/Chat-Vibe.a303fc62c71259005246.png",
+    "static/media/Project1.jpg": "/My-Portfolio/static/media/Project1.f10e535f417d89bc4614.jpg",
+    "static/media/Me.jpg": "/My-Portfolio/static/media/Me.e77033f16c72c19ae16c.jpg",
+    "index.html": "/My-Portfolio/index.html",
+    "main.c7e34cd0.css.map": "/My-Portfolio/static/css/main.c7e34cd0.css.map",
+    "main.1ffee5da.js.map": "/My-Portfolio/static/js/main.1ffee5da.js.map"
   },
   "entrypoints": [
     "static/css/main.c7e34cd0.css",
-    "static/js/main.bca9a9ce.js"
+    "static/js/main.1ffee5da.js"
   ]
 }
