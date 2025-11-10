@@ -31,5 +31,5 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/my-portfolio.git
+git clone https://github.com/NiklausV/My-Portfolio.git
 cd my-portfolio
