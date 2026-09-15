@@ -11,7 +11,7 @@
 
 **Founder & Software Engineer** · Clive, Iowa (Des Moines metro) · 🇺🇸 U.S. Citizen
 
-I'm a WGU Software Engineering student (**B.S. expected Jan 2027**) who founded **Vextora AI Solutions** and co-founded **IronOS**. I ship production full-stack systems end to end: Next.js/TypeScript front ends, Supabase/PostgreSQL data models, Stripe billing, n8n automation, and cloud deployments on Vercel, AWS, and Azure.
+I'm a WGU Software Engineering student (**B.S. expected Jan 2027**) who founded **Vextora AI Solutions** and **IronOS**. I ship production full-stack systems end to end: Next.js/TypeScript front ends, Supabase/PostgreSQL data models, Stripe billing, n8n automation, and cloud deployments on Vercel, AWS, and Azure.
 
 **🎯 Seeking a Software Engineering internship in Iowa for 2026–2027** (Des Moines metro, hybrid, or remote).
 
@@ -38,7 +38,7 @@ I'm a WGU Software Engineering student (**B.S. expected Jan 2027**) who founded 
 
 ---
 
-## 🏋️ Co-Founder & Lead Engineer — IronOS (Apr 2026 – Present)
+## 🏋️ Founder & Lead Engineer — IronOS (Apr 2026 – Present)
 
 SaaS platform that gives powerlifting coaches an AI content engine, client onboarding, and subscription billing. Live: [ironos.dev](https://ironos.dev)
 

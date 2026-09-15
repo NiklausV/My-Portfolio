@@ -26,7 +26,7 @@ const DATA = {
   name: "Mustafa Hadi",
   role: "Founder · Software Engineer",
   roleAlt: "Founder, Vextora AI Solutions",
-  tagline: "Founder of Vextora AI Solutions and technical co-founder of IronOS. I ship production full-stack systems with Next.js, TypeScript, Supabase, and Stripe on Vercel, AWS, and Azure. Seeking a Software Engineering internship in Iowa for 2026–2027.",
+  tagline: "Founder of Vextora AI Solutions and IronOS. I ship production full-stack systems with Next.js, TypeScript, Supabase, and Stripe on Vercel, AWS, and Azure. Seeking a Software Engineering internship in Iowa for 2026–2027.",
   email: "Mustafahadi053@gmail.com",
   phone: "+1 (515) 444-6495",
   location: "Clive, Iowa (Des Moines metro)",
@@ -115,7 +115,7 @@ const DATA = {
       skills: ["Next.js","TypeScript","Supabase","PostgreSQL","Stripe","n8n","Vercel","Azure","Python"]
     },
     {
-      title: "Co-Founder & Lead Engineer",
+      title: "Founder & Lead Engineer",
       company: "IronOS",
       period: "Apr 2026 – Present",
       description: "SaaS platform that gives powerlifting coaches an AI content engine, client onboarding, and subscription billing. Own the codebase, infrastructure, and security.",
@@ -183,7 +183,7 @@ const DATA = {
     {
       title: "IronOS",
       featured: true,
-      role: "Co-Founder & Lead Engineer · Apr 2026 – Present · In production",
+      role: "Founder & Lead Engineer · Apr 2026 – Present · In production",
       description: "SaaS for powerlifting coaches: AI content engine, lead capture, DM scripts, self-serve checkout, and automated coach provisioning, with paying-customer infrastructure and a 12-agent AI operations team.",
       techStack: ["Next.js","TypeScript","Supabase","PostgreSQL","Clerk","Stripe","OpenAI API","Anthropic API","Vitest","Vercel"],
       data: ["Supabase PostgreSQL with Realtime","Coaches, clients, setup orders, voice profiles","Agent activity log + agent-signals bus","Clerk auth · Stripe subscriptions + webhooks","1,000+ commits · 1,600+ automated tests"],

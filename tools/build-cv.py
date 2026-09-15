@@ -140,7 +140,7 @@ hyperlink(p, "https://www.linkedin.com/in/mustafa-hadi-0aa967312/", "linkedin.co
 # ── Summary ─────────────────────────────────────────────────────────────────
 heading("Summary")
 para("Founder-engineer and WGU Software Engineering student (B.S. expected Jan 2027) seeking a Software Engineering "
-     "internship in Iowa. Founder of Vextora AI Solutions and technical co-founder of IronOS: I ship production systems "
+     "internship in Iowa. Founder of Vextora AI Solutions and IronOS: I ship production systems "
      "end to end with Next.js/TypeScript, Supabase/PostgreSQL, Stripe, and n8n on Vercel, AWS, and Azure.",
      after=1)
 
@@ -168,7 +168,7 @@ bullet("Automated research, scoring, outreach drafting, and nurture (n8n in Dock
 bullet("Architected a standalone Microsoft Azure stack (App Service, Azure Database for PostgreSQL + pgvector, Entra External ID, "
        "Blob Storage) for a healthcare-adjacent client and evaluated AWS alternatives for cost and compliance.")
 
-entry("Co-Founder & Lead Engineer", "IronOS", "Remote  ·  Apr 2026 – Present",
+entry("Founder & Lead Engineer", "IronOS", "Remote  ·  Apr 2026 – Present",
       "SaaS platform that gives powerlifting coaches an AI content engine, client onboarding, and subscription billing.")
 bullet("Built the product in Next.js / TypeScript with Supabase (PostgreSQL), Clerk auth, and Stripe subscriptions; shipped "
        "self-serve checkout, webhook-driven coach provisioning, and automated setup pipelines across 1,000+ commits.")
