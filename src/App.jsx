@@ -4,7 +4,7 @@ import {
   Mail, Phone, ExternalLink,
   Award, Code2, GraduationCap, Menu, X,
   ChevronDown, Terminal, Zap, Shield,
-  ArrowUpRight, Circle
+  ArrowUpRight, Circle, Rocket, Cloud, FileText, MapPin
 } from 'lucide-react'
 import FlowFieldBackground from './components/ui/FlowFieldBackground'
 import './index.css'
@@ -24,47 +24,110 @@ const LinkedinIcon = ({ size = 20 }) => (
 // ─── Data ────────────────────────────────────────────────────────────────────
 const DATA = {
   name: "Mustafa Hadi",
-  role: "Full Stack Developer",
-  roleAlt: "Software Engineer / AI Engineer",
-  tagline: "Building elegant solutions to complex problems. Experienced in Full Stack Web Dev, App Development, APIs, and Data Systems.",
+  role: "Founder · Software Engineer",
+  roleAlt: "Founder, Vextora AI Solutions",
+  tagline: "Founder of Vextora AI Solutions and technical co-founder of IronOS. I ship production full-stack systems with Next.js, TypeScript, Supabase, and Stripe on Vercel, AWS, and Azure. Seeking a Software Engineering internship in Iowa for 2026–2027.",
   email: "Mustafahadi053@gmail.com",
   phone: "+1 (515) 444-6495",
+  location: "Clive, Iowa (Des Moines metro)",
   github: "https://github.com/NiklausV",
-  linkedin: "https://www.linkedin.com/in/mustafa-hadi-",
+  linkedin: "https://www.linkedin.com/in/mustafa-hadi-0aa967312/",
   resumeLink: "https://1drv.ms/w/c/75B06AAA3EF144F3/ASt5R-A6lktPnSt23N11PJE?e=vZg6FC",
+  resumePdf: `${import.meta.env.BASE_URL}Mustafa-Hadi-Resume.pdf`,
   profileImage: `${import.meta.env.BASE_URL}me_new.png`,
 
   education: {
-    degree: "B.S. Software Engineering (Java focus)",
+    degree: "B.S. Software Engineering",
     school: "Western Governors University",
-    graduationDate: null
+    location: "Clive, IA",
+    graduationDate: "Expected Jan 2027",
+    coursework: "Data Structures & Algorithms, Java & Spring Boot, Web Development, Database Management, Software Engineering, Python, UX Design"
   },
 
-  interests: ["Web Development","Machine Learning","Cloud Architecture","App Development","Open Source","UI/UX Design","Team Leadership","Data Analysis"],
+  interests: ["Full-Stack Web","Cloud Architecture","AI Automation","Data Modeling","Developer Tools","UI/UX Design","Team Leadership","Open Source"],
 
   certifications: [
-    { name: "CS50 Intro to Computer Science", year: "2024" },
-    { name: "CS50 Intro to Python", year: "2024" },
-    { name: "CS50 Intro to SQL", year: "2024" },
-    { name: "CIW JavaScript Specialist", year: "2025" },
-    { name: "CIW User Interface Designer", year: "2025" },
-    { name: "CIW Advanced HTML5 & CSS3 Specialist", year: "2025" },
-    { name: "CompTIA Project+", year: "2026" },
-    { name: "AWS Certified Cloud Practitioner", year: "2026" },
-    { name: "AXELOS ITIL Foundations", year: "2026" },
-    { name: "WGU Certified Back End Developer", year: "2026" },
-    { name: "WGU Certified Front End Developer", year: "2026" }
+    { name: "Harvard CS50: Intro to Computer Science", year: "2024" },
+    { name: "Harvard CS50: Intro to Python", year: "2024" },
+    { name: "Harvard CS50: Intro to SQL", year: "2024" },
+    { name: "CIW JavaScript Specialist", year: "Expected Jan 2027" },
+    { name: "CIW User Interface Designer", year: "Expected Jan 2027" },
+    { name: "CIW Advanced HTML5 & CSS3 Specialist", year: "Expected Jan 2027" },
+    { name: "AWS Certified Cloud Practitioner", year: "Expected Jan 2027" },
+    { name: "CompTIA Project+", year: "Expected Jan 2027" },
+    { name: "AXELOS ITIL 4 Foundation", year: "Expected Jan 2027" },
+    { name: "WGU Certified Back-End Developer", year: "Expected Jan 2027" },
+    { name: "WGU Certified Front-End Developer", year: "Expected Jan 2027" }
   ],
 
   awards: [
+    { name: "First paying client closed & delivered — Vextora AI Solutions", year: "Jun 2026" },
+    { name: "Shipped IronOS payments & provisioning to production (1,600+ tests)", year: "Jun 2026" },
     { name: "Capstone Project Selected for Department Showcase", year: "2023" },
     { name: "Built Top-Rated App for Community Use", year: "2024" },
     { name: "Process Optimization Recognition", year: "2024" },
-    { name: "Excellence in Data Reporting", year: "2024" },
-    { name: "Powerlifting Coach / Athlete in PA", year: "2024" }
+    { name: "Excellence in Data Reporting", year: "2024" }
   ],
 
+  founder: {
+    company: "Vextora AI Solutions",
+    title: "Founder & Software Engineer",
+    period: "Apr 2026 – Present",
+    location: "Des Moines, Iowa",
+    site: "https://vextora-ai-solutions.vercel.app",
+    pitch: "An AI-powered web presence and lead-generation agency for local service businesses. I design, build, deploy, and operate every layer — the product, the data, the automation, and the client relationship.",
+    stats: [
+      { value: "7,000+", label: "leads modeled in the CRM" },
+      { value: "1st", label: "paying client closed & delivered" },
+      { value: "3", label: "production deployments on Vercel" },
+      { value: "0", label: "TypeScript errors at ship" }
+    ],
+    whatItIs: [
+      "Production client websites and an internal admin CMS: Next.js, TypeScript, Tailwind, Supabase (PostgreSQL, Auth, Row-Level Security), deployed on Vercel with preview and production environments.",
+      "A 7,000+ lead CRM and pipeline: Python scraping with place-id → phone → domain dedupe, lead scoring, a deal board, and an activity timeline on a multi-tenant PostgreSQL schema.",
+      "A sales-rep portal with magic-link authentication, lead assignment, click-to-call logging, clickwrap e-signature, Stripe deposit links, and webhook-verified payment confirmation.",
+      "Automation: n8n workflows (self-hosted in Docker) and Node scripts for research, scoring, and outreach drafting, plus a Resend + Calendly nurture engine on Vercel Cron behind a default-deny send gate.",
+      "Cloud architecture: Vercel and Supabase in production, a standalone Azure design (App Service, Azure Database for PostgreSQL + pgvector, Entra External ID, Blob Storage) for a wellness client, and AWS evaluations."
+    ],
+    whyItMatters: [
+      { title: "Full-stack ownership", text: "I have shipped and supported every layer, from schema migrations and RLS policies to UI, billing, and email." },
+      { title: "Real requirements", text: "I turn what a business owner says into scoped, testable features and deliver them on a deadline." },
+      { title: "Production discipline", text: "CI/CD, preview environments, secrets handling, key rotation, and webhooks that must never double-fire." },
+      { title: "Data modeling", text: "Multi-tenant PostgreSQL with dedupe precedence and event tables that feed dashboards and reports." },
+      { title: "Automation mindset", text: "If a task repeats, I script it with n8n, cron, or Node/Python, and I add a safety gate." },
+      { title: "Compliance awareness", text: "TCPA / CAN-SPAM checklist, consent records, and clickwrap acceptance logs built into the product." }
+    ]
+  },
+
   experience: [
+    {
+      title: "Founder & Software Engineer",
+      company: "Vextora AI Solutions",
+      period: "Apr 2026 – Present",
+      description: "AI-powered web presence and lead-generation agency for local service businesses. Built the product, the data platform, the automation, and closed the first paying client.",
+      highlights: [
+        "Shipped production client sites + admin CMS with Next.js, TypeScript, Tailwind, and Supabase on Vercel",
+        "Designed a multi-tenant PostgreSQL schema behind a 7,000+ lead CRM with Python scraping and dedupe",
+        "Built a rep portal: magic-link auth, lead assignment, clickwrap e-sign, Stripe deposits, verified webhooks",
+        "Automated research, scoring, and outreach with n8n (Docker) + Node behind a default-deny send gate",
+        "Architected a standalone Azure stack (App Service, PostgreSQL + pgvector, Entra ID, Blob) for a wellness client"
+      ],
+      skills: ["Next.js","TypeScript","Supabase","PostgreSQL","Stripe","n8n","Vercel","Azure","Python"]
+    },
+    {
+      title: "Co-Founder & Lead Engineer",
+      company: "IronOS",
+      period: "Apr 2026 – Present",
+      description: "SaaS platform that gives powerlifting coaches an AI content engine, client onboarding, and subscription billing. Own the codebase, infrastructure, and security.",
+      highlights: [
+        "Built in Next.js / TypeScript with Supabase, Clerk auth, and Stripe subscriptions across 1,000+ commits",
+        "Shipped self-serve checkout, webhook-driven coach provisioning, and automated setup pipelines",
+        "Maintain a 1,600+ test suite with zero TypeScript errors on a production Vercel deployment",
+        "Designed a 12-agent AI operations system with a Next.js + Supabase Realtime monitoring dashboard",
+        "Integrated OpenAI and Anthropic APIs with cost controls; hardened secrets and key rotation"
+      ],
+      skills: ["Next.js","TypeScript","Supabase","Clerk","Stripe","OpenAI API","Anthropic API","Vitest","Vercel"]
+    },
     {
       title: "Buying Coordinator",
       company: "Crunchyroll",
@@ -96,18 +159,46 @@ const DATA = {
   ],
 
   skills: {
-    "Programming": ["Python","Java","JavaScript","HTML/CSS","SQL","C++","Spring Boot","Node.js","React","React Native","Pandas","Tailwind CSS","Django","AI Automation","AI Workflows","AI Building","AI Skills","AI Agents"],
-    "Technical": ["Data Structures & Algorithms","Data Analysis","Backend Development","REST APIs","JSON / ENV Config","Git / Version Control","Excel (VLOOKUP, Pivot Tables)","Power BI (DAX, Data Modeling)"],
-    "Platforms": ["Linux","Windows","macOS","AWS","GitHub"],
-    "Domain": ["Biomechanics & Force Analysis","Exercise Physiology","Athlete Performance Analytics","Technical Documentation","Project & Time Management","Client Communication & Coaching"]
+    "Languages & Frameworks": ["TypeScript","JavaScript","Python","Java","SQL","C++","HTML/CSS","React","Next.js","Node.js / Express","Flask","Spring Boot","Tailwind CSS","Socket.IO","React Native"],
+    "Cloud & Infrastructure": ["Vercel (serverless, cron, previews)","Supabase (PostgreSQL, Auth, RLS, Realtime)","AWS (EC2, S3, IAM, Lambda)","Azure (App Service, PostgreSQL, Entra ID, Blob)","Docker","Cloudflare DNS","GitHub Actions CI/CD","n8n"],
+    "Data & Tools": ["PostgreSQL","MongoDB","Stripe API","Clerk","REST APIs","Git / GitHub","Playwright","Vitest","Pandas","NLP (TF-IDF, cosine similarity)","Excel (pivot tables)","Power BI (DAX)"],
+    "Practices": ["Data Structures & Algorithms","Test-Driven Development","Code Review","Technical Documentation","Requirements Gathering","Agile Delivery with Real Clients","Security & Compliance (TCPA, CAN-SPAM)"]
   },
 
   projects: [
     {
+      title: "Vextora AI Solutions Platform",
+      featured: true,
+      role: "Founder & Software Engineer · Apr 2026 – Present · In production",
+      description: "The agency's production platform: marketing site, client websites, admin CMS, CRM, sales-rep portal, and an automation layer, serving real client businesses, sales reps, and admins.",
+      techStack: ["Next.js","TypeScript","Tailwind CSS","Supabase","PostgreSQL","Stripe","Resend","Calendly API","n8n","Docker","Vercel","Python","Playwright"],
+      data: ["Supabase PostgreSQL, multi-tenant with RLS","7,000+ lead records with dedupe precedence","Roles: client owners, sales reps, admins","Deals, contracts, commissions, activity events","Stripe live catalog + verified webhooks"],
+      ai: ["Claude Code agent team: research → score → draft → QA gate","Anthropic Claude + OpenAI APIs","MCP servers: Supabase, Stripe, n8n, Vercel","n8n orchestration, self-hosted in Docker","Multi-model LLM council for decisions","AI voice + video for marketing assets"],
+      features: ["Magic-link rep portal with clickwrap e-sign and webhook-verified deposits","Automated nurture engine: Resend + Calendly webhooks on Vercel Cron","Default-deny outreach gate with a TCPA / CAN-SPAM compliance checklist","Standalone Azure architecture designed for a regulated wellness client"],
+      link: "https://vextora-ai-solutions.vercel.app",
+      linkLabel: "View Live Site",
+      image: `${import.meta.env.BASE_URL}vextora-site.png`,
+      tag: "Founder · Production"
+    },
+    {
+      title: "IronOS",
+      featured: true,
+      role: "Co-Founder & Lead Engineer · Apr 2026 – Present · In production",
+      description: "SaaS for powerlifting coaches: AI content engine, lead capture, DM scripts, self-serve checkout, and automated coach provisioning, with paying-customer infrastructure and a 12-agent AI operations team.",
+      techStack: ["Next.js","TypeScript","Supabase","PostgreSQL","Clerk","Stripe","OpenAI API","Anthropic API","Vitest","Vercel"],
+      data: ["Supabase PostgreSQL with Realtime","Coaches, clients, setup orders, voice profiles","Agent activity log + agent-signals bus","Clerk auth · Stripe subscriptions + webhooks","1,000+ commits · 1,600+ automated tests"],
+      ai: ["12 Claude Code agents: growth, outreach, content, sales, revenue, churn, research, product, compliance, publishing, onboarding, analytics","Shared domain / schema / security skills","MCP: Supabase + Stripe (read-only)","Next.js + Supabase Realtime monitoring dashboard","Cost-controlled OpenAI / Anthropic content generation"],
+      features: ["Self-serve checkout with webhook-driven coach provisioning","Zero TypeScript errors and a 1,600+ test suite at ship","12-agent ops system coordinated through a Realtime signals bus","Hardened secrets handling and key rotation"],
+      link: "https://ironos.dev",
+      linkLabel: "View Live Site",
+      image: `${import.meta.env.BASE_URL}ironos-site.png`,
+      tag: "SaaS · Production"
+    },
+    {
       title: "AI Resume Screening Bot",
       description: "Full-stack ML application that analyzes resumes against job descriptions using NLP, providing candidate evaluation with detailed insights and scoring.",
       techStack: ["Python","Flask","Scikit-learn","PyPDF2","React","Tailwind CSS"],
-      features: ["PDF & DOCX Support","Holistic AI Analysis","Smart Scoring","Actionable Insights","Real-time Results"],
+      features: ["PDF & DOCX Support","TF-IDF + cosine similarity scoring","40% fewer false positives vs keyword match","Results in under 5 seconds"],
       github: "https://github.com/NiklausV/Resume-Screening-Bot",
       image: `${import.meta.env.BASE_URL}resume-bot.png`,
       tag: "ML / NLP"
@@ -171,7 +262,7 @@ function Nav({ active, scrollTo }) {
     return () => window.removeEventListener('scroll', fn)
   }, [])
 
-  const links = ['home', 'about', 'experience', 'projects', 'contact']
+  const links = ['home', 'founder', 'about', 'experience', 'projects', 'contact']
 
   return (
     <motion.nav
@@ -270,7 +361,7 @@ function Hero({ scrollTo }) {
   const { scrollY } = useScroll()
   const y = useTransform(scrollY, [0, 400], [0, -80])
 
-  const typewriterPhrases = ["Full Stack Developer", "Software Engineer", "API Builder", "ML Enthusiast"]
+  const typewriterPhrases = ["Software Engineer", "Founder, Vextora AI Solutions", "Full-Stack Developer", "Cloud & Automation Builder"]
   const [phraseIdx, setPhraseIdx] = useState(0)
   const [displayed, setDisplayed] = useState('')
   const [typing, setTyping] = useState(true)
@@ -322,7 +413,7 @@ function Hero({ scrollTo }) {
             className="inline-flex items-center gap-2 mb-8 px-4 py-2 bg-red-500/5 border border-red-500/20 rounded-full"
           >
             <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
-            <span className="mono text-xs text-zinc-400">Available for opportunities</span>
+            <span className="mono text-xs text-zinc-400">Open to Software Engineering internships · Iowa · 2026–2027</span>
           </motion.div>
 
           {/* Main heading */}
@@ -345,7 +436,7 @@ function Hero({ scrollTo }) {
             transition={{ delay: 0.45 }}
             className="mono text-zinc-500 text-sm mb-3 tracking-widest uppercase"
           >
-            — Mustafa Hadi
+            — Mustafa Hadi · Clive, Iowa
           </motion.p>
 
           {/* Typewriter role */}
@@ -460,6 +551,7 @@ function Hero({ scrollTo }) {
             <div className="text-center">
               <p className="font-bold text-white text-lg leading-tight">{DATA.name}</p>
               <p className="mono text-red-400 text-xs mt-1 tracking-widest uppercase">{DATA.role}</p>
+              <p className="mono text-zinc-500 text-[11px] mt-1 flex items-center justify-center gap-1"><MapPin size={11} /> {DATA.location}</p>
             </div>
           </div>
         </motion.div>
@@ -485,6 +577,85 @@ function Hero({ scrollTo }) {
   )
 }
 
+// ─── Founder ──────────────────────────────────────────────────────────────────
+function Founder() {
+  const f = DATA.founder
+  return (
+    <section id="founder" className="py-28 px-6">
+      <div className="max-w-6xl mx-auto">
+        <FadeIn className="text-center mb-14">
+          <SectionLabel>Founder</SectionLabel>
+          <h2 className="text-4xl md:text-5xl font-black mt-4 mb-3">{f.company}</h2>
+          <p className="mono text-sm text-red-400 mb-4">{f.title} · {f.period} · {f.location}</p>
+          <p className="text-zinc-400 max-w-2xl mx-auto leading-relaxed">{f.pitch}</p>
+          <a
+            href={f.site}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 mt-6 px-5 py-2.5 border border-red-500/40 hover:bg-red-500/10 text-red-400 text-sm font-semibold mono rounded-lg transition-all duration-200"
+          >
+            <ExternalLink size={14} /> vextora-ai-solutions.vercel.app
+          </a>
+        </FadeIn>
+
+        {/* Stats */}
+        <FadeIn delay={0.05}>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+            {f.stats.map(s => (
+              <div key={s.label} className="p-5 bg-[#0d0d0d] border border-[#1c1c1c] rounded-xl text-center hover:border-red-500/20 transition-colors duration-300">
+                <p className="text-3xl font-black text-white">{s.value}</p>
+                <p className="mono text-xs text-zinc-500 mt-1 uppercase tracking-wider">{s.label}</p>
+              </div>
+            ))}
+          </div>
+        </FadeIn>
+
+        <div className="grid lg:grid-cols-2 gap-6">
+          {/* What it is */}
+          <FadeIn delay={0.1}>
+            <div className="h-full p-6 bg-[#0d0d0d] border border-[#1c1c1c] rounded-xl hover:border-red-500/20 transition-all duration-300">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="p-2 bg-red-500/10 rounded-lg">
+                  <Rocket size={20} className="text-red-500" />
+                </div>
+                <h3 className="font-bold text-lg">What I built</h3>
+              </div>
+              <ul className="space-y-3">
+                {f.whatItIs.map((item, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-zinc-300 leading-relaxed">
+                    <span className="text-red-500 mt-1 shrink-0">▹</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </FadeIn>
+
+          {/* Why it matters for an engineering team */}
+          <FadeIn delay={0.2}>
+            <div className="h-full p-6 bg-[#0d0d0d] border border-[#1c1c1c] rounded-xl hover:border-red-500/20 transition-all duration-300">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="p-2 bg-red-500/10 rounded-lg">
+                  <Cloud size={20} className="text-red-500" />
+                </div>
+                <h3 className="font-bold text-lg">What it means for your engineering team</h3>
+              </div>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {f.whyItMatters.map(w => (
+                  <div key={w.title} className="p-3 bg-[#111111] rounded-lg border border-[#222222]">
+                    <p className="text-sm text-white font-semibold mb-1">{w.title}</p>
+                    <p className="text-xs text-zinc-500 leading-relaxed">{w.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </FadeIn>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 // ─── About ────────────────────────────────────────────────────────────────────
 function About() {
   return (
@@ -493,7 +664,7 @@ function About() {
         <FadeIn className="text-center mb-16">
           <SectionLabel>About</SectionLabel>
           <h2 className="text-4xl md:text-5xl font-black mt-4 mb-4">Background & Credentials</h2>
-          <p className="text-zinc-500 max-w-xl mx-auto">Driven developer with a foundation in software engineering and a track record across data, systems, and performance domains.</p>
+          <p className="text-zinc-500 max-w-xl mx-auto">WGU Software Engineering student (B.S. expected Jan 2027) based in the Des Moines metro, with production experience across web, data, cloud, and automation.</p>
         </FadeIn>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -507,7 +678,9 @@ function About() {
                 <h3 className="font-bold text-lg">Education</h3>
               </div>
               <p className="font-semibold text-white mb-1">{DATA.education.degree}</p>
-              <p className="text-zinc-400 text-sm">{DATA.education.school}</p>
+              <p className="text-zinc-400 text-sm">{DATA.education.school} · {DATA.education.location}</p>
+              <p className="mono text-xs text-red-400 mt-1">{DATA.education.graduationDate}</p>
+              <p className="text-zinc-500 text-xs mt-3 leading-relaxed"><span className="text-zinc-400">Coursework:</span> {DATA.education.coursework}</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {DATA.interests.map(i => (
                   <span key={i} className="px-2 py-1 bg-[#151515] border border-[#2a2a2a] text-zinc-400 text-xs rounded">
@@ -581,9 +754,14 @@ const TECH_ICONS = [
   { name: 'Django',      slug: 'django',              variant: 'plain',    color: '#44B78B', bg: 'rgba(68,183,139,0.1)'  },
   { name: 'Tailwind',    slug: 'tailwindcss',         variant: 'original', color: '#06B6D4', bg: 'rgba(6,182,212,0.1)'   },
   { name: 'Spring Boot', slug: 'spring',              variant: 'original', color: '#6DB33F', bg: 'rgba(109,179,63,0.1)'  },
-  { name: 'SQL',         slug: 'postgresql',          variant: 'original', color: '#4169E1', bg: 'rgba(65,105,225,0.1)'  },
+  { name: 'PostgreSQL',  slug: 'postgresql',          variant: 'original', color: '#4169E1', bg: 'rgba(65,105,225,0.1)'  },
+  { name: 'TypeScript',  slug: 'typescript',          variant: 'original', color: '#3178C6', bg: 'rgba(49,120,198,0.1)'  },
+  { name: 'Next.js',     slug: 'nextjs',              variant: 'original', color: '#ffffff', bg: 'rgba(255,255,255,0.07)' },
+  { name: 'Supabase',    slug: 'supabase',            variant: 'original', color: '#3ECF8E', bg: 'rgba(62,207,142,0.1)'  },
   { name: 'Git',         slug: 'git',                 variant: 'original', color: '#F05032', bg: 'rgba(240,80,50,0.1)'   },
-  { name: 'AWS',         slug: 'amazonwebservices',   variant: 'original', color: '#FF9900', bg: 'rgba(255,153,0,0.1)'   },
+  { name: 'AWS',         slug: 'amazonwebservices',   variant: 'original-wordmark', color: '#FF9900', bg: 'rgba(255,153,0,0.1)'   },
+  { name: 'Azure',       slug: 'azure',               variant: 'original', color: '#0078D4', bg: 'rgba(0,120,212,0.1)'   },
+  { name: 'Docker',      slug: 'docker',              variant: 'original', color: '#2496ED', bg: 'rgba(36,150,237,0.1)'  },
   { name: 'Linux',       slug: 'linux',               variant: 'original', color: '#FCC624', bg: 'rgba(252,198,36,0.1)'  },
   { name: 'GitHub',      slug: 'github',              variant: 'original', color: '#ffffff', bg: 'rgba(255,255,255,0.07)' },
 ]
@@ -696,7 +874,7 @@ function Experience() {
       <div className="max-w-5xl mx-auto">
         <FadeIn className="text-center mb-16">
           <SectionLabel>Experience</SectionLabel>
-          <h2 className="text-4xl md:text-5xl font-black mt-4 mb-4">Work & Leadership</h2>
+          <h2 className="text-4xl md:text-5xl font-black mt-4 mb-4">Ventures, Work & Leadership</h2>
         </FadeIn>
 
         {/* Timeline */}
@@ -769,6 +947,78 @@ function Experience() {
   )
 }
 
+// ─── Featured Projects ────────────────────────────────────────────────────────
+const ChipGroup = ({ label, items, mono = false }) => (
+  <div>
+    <p className="mono text-red-500 text-[10px] uppercase tracking-widest mb-2 font-semibold">{label}</p>
+    <div className="flex flex-wrap gap-1.5">
+      {items.map(t => (
+        <span key={t} className={`px-2 py-0.5 bg-[#111111] text-zinc-400 text-xs rounded border border-[#222222] ${mono ? 'mono' : ''}`}>
+          {t}
+        </span>
+      ))}
+    </div>
+  </div>
+)
+
+function FeaturedProject({ proj, delay }) {
+  return (
+    <FadeIn delay={delay}>
+      <motion.div
+        whileHover={{ y: -4 }}
+        transition={{ duration: 0.2 }}
+        className="group flex flex-col bg-[#0d0d0d] border border-red-500/20 rounded-xl overflow-hidden hover:border-red-500/50 transition-colors duration-300 h-full"
+      >
+        <div className="relative overflow-hidden h-56">
+          <img
+            src={proj.image}
+            alt={proj.title}
+            className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-[#0d0d0d]/30 to-transparent" />
+          <span className="absolute top-3 left-3 mono text-[10px] uppercase tracking-widest px-2 py-1 bg-red-600 text-white rounded">
+            Founder-built
+          </span>
+          <span className="absolute top-3 right-3 mono text-xs px-2 py-1 bg-[#050505]/80 text-red-500 border border-red-500/30 rounded">
+            {proj.tag}
+          </span>
+        </div>
+
+        <div className="p-6 flex flex-col flex-1">
+          <h3 className="text-2xl font-black mb-1">{proj.title}</h3>
+          <p className="mono text-xs text-zinc-500 mb-3">{proj.role}</p>
+          <p className="text-zinc-400 text-sm leading-relaxed mb-5">{proj.description}</p>
+
+          <div className="grid sm:grid-cols-2 gap-4 mb-4">
+            <ChipGroup label="Data & Users" items={proj.data} />
+            <ChipGroup label="AI Team & Infrastructure" items={proj.ai} />
+          </div>
+          <ChipGroup label="Tech Stack" items={proj.techStack} mono />
+
+          <ul className="space-y-1.5 my-5">
+            {proj.features.map(f => (
+              <li key={f} className="flex items-start gap-2 text-xs text-zinc-400">
+                <span className="text-red-500 mt-0.5 shrink-0">▹</span>
+                {f}
+              </li>
+            ))}
+          </ul>
+
+          <a
+            href={proj.link}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-auto flex items-center justify-center gap-2 py-2.5 bg-red-600 hover:bg-red-500 text-white text-sm font-bold mono rounded-lg transition-all duration-200"
+          >
+            <ExternalLink size={16} /> {proj.linkLabel}
+          </a>
+        </div>
+      </motion.div>
+    </FadeIn>
+  )
+}
+
 // ─── Projects ─────────────────────────────────────────────────────────────────
 function Projects() {
   return (
@@ -777,11 +1027,22 @@ function Projects() {
         <FadeIn className="text-center mb-16">
           <SectionLabel>Projects</SectionLabel>
           <h2 className="text-4xl md:text-5xl font-black mt-4 mb-4">Featured Work</h2>
-          <p className="text-zinc-500 max-w-lg mx-auto">A selection of projects showcasing full-stack, ML, and systems engineering capabilities.</p>
+          <p className="text-zinc-500 max-w-lg mx-auto">Production products I founded and run, plus projects that show full-stack, ML, and systems depth.</p>
+        </FadeIn>
+
+        {/* Founder-built products: real databases, real users, AI team */}
+        <div className="grid lg:grid-cols-2 gap-6 mb-10">
+          {DATA.projects.filter(p => p.featured).map((proj, i) => (
+            <FeaturedProject key={proj.title} proj={proj} delay={i * 0.12} />
+          ))}
+        </div>
+
+        <FadeIn className="text-center mb-8">
+          <p className="mono text-xs tracking-[0.2em] uppercase text-zinc-500">More projects</p>
         </FadeIn>
 
         <div className="grid lg:grid-cols-3 gap-6">
-          {DATA.projects.map((proj, i) => (
+          {DATA.projects.filter(p => !p.featured).map((proj, i) => (
             <FadeIn key={i} delay={i * 0.12}>
               <motion.div
                 whileHover={{ y: -4 }}
@@ -827,12 +1088,12 @@ function Projects() {
 
                   {/* Links */}
                   <a
-                    href={proj.github}
+                    href={proj.link || proj.github}
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center justify-center gap-2 py-2.5 bg-[#111111] hover:bg-red-500/10 hover:text-red-400 border border-[#2a2a2a] hover:border-red-500/40 text-zinc-400 text-sm font-semibold rounded-lg transition-all duration-200"
                   >
-                    <GithubIcon size={16} /> View Source
+                    {proj.link ? <ExternalLink size={16} /> : <GithubIcon size={16} />} {proj.linkLabel || 'View Source'}
                   </a>
                 </div>
               </motion.div>
@@ -853,8 +1114,8 @@ function Contact() {
           <SectionLabel>Contact</SectionLabel>
           <h2 className="text-4xl md:text-5xl font-black mt-4 mb-4">Let's Connect</h2>
           <p className="text-zinc-500 mb-12 leading-relaxed">
-            Open to new opportunities, collaborations, and interesting problems.<br />
-            Let's build something great together.
+            Seeking a Software Engineering internship in Iowa (Des Moines metro, hybrid, or remote) for 2026–2027.<br />
+            Also open to collaborations and interesting problems. Let's build something great together.
           </p>
         </FadeIn>
 
@@ -885,14 +1146,24 @@ function Contact() {
             ))}
           </div>
 
-          <a
-            href={DATA.resumeLink}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-red-600 hover:bg-red-500 text-white font-bold text-sm mono rounded-lg transition-all duration-200"
-          >
-            <Terminal size={16} /> Download Resume
-          </a>
+          <div className="flex flex-wrap justify-center gap-3">
+            <a
+              href={DATA.resumePdf}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-red-600 hover:bg-red-500 text-white font-bold text-sm mono rounded-lg transition-all duration-200"
+            >
+              <FileText size={16} /> Resume (PDF)
+            </a>
+            <a
+              href={DATA.resumeLink}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 border border-[#2e2e2e] hover:border-red-500/50 text-zinc-300 hover:text-red-400 font-semibold text-sm mono rounded-lg transition-all duration-200"
+            >
+              <Terminal size={16} /> Open in Word (OneDrive)
+            </a>
+          </div>
         </FadeIn>
       </div>
     </section>
@@ -904,8 +1175,8 @@ function Footer() {
   return (
     <footer className="py-8 px-6 text-center">
       <p className="mono text-xs text-zinc-700">
-        © 2025 Mustafa Hadi &nbsp;·&nbsp; Built with React + Vite + Motion
-        &nbsp;·&nbsp; <span className="text-red-500/60">Available for hire</span>
+        © 2026 Mustafa Hadi &nbsp;·&nbsp; Built with React + Vite + Motion
+        &nbsp;·&nbsp; <span className="text-red-500/60">Open to SWE internships in Iowa</span>
       </p>
     </footer>
   )
@@ -921,7 +1192,7 @@ export default function App() {
   }
 
   useEffect(() => {
-    const sections = ['home', 'about', 'experience', 'projects', 'contact']
+    const sections = ['home', 'founder', 'about', 'experience', 'projects', 'contact']
     const observer = new IntersectionObserver(
       entries => {
         entries.forEach(e => {
@@ -941,6 +1212,7 @@ export default function App() {
     <div className="min-h-screen text-white">
       <Nav active={activeSection} scrollTo={scrollTo} />
       <Hero scrollTo={scrollTo} />
+      <Founder />
       <About />
       <TechStack />
       <Skills />
