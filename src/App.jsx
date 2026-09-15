@@ -32,8 +32,9 @@ const DATA = {
   location: "Clive, Iowa (Des Moines metro)",
   github: "https://github.com/NiklausV",
   linkedin: "https://www.linkedin.com/in/mustafa-hadi-0aa967312/",
-  resumeLink: "https://1drv.ms/w/c/75B06AAA3EF144F3/ASt5R-A6lktPnSt23N11PJE?e=vZg6FC",
-  resumePdf: `${import.meta.env.BASE_URL}Mustafa-Hadi-Resume.pdf`,
+  resumeLink: `${import.meta.env.BASE_URL}Mustafa-Hadi-Resume.pdf?v=20260915b`,
+  resumePdf: `${import.meta.env.BASE_URL}Mustafa-Hadi-Resume.pdf?v=20260915b`,
+  resumeDocx: `${import.meta.env.BASE_URL}Mustafa-Hadi-Resume.docx?v=20260915b`,
   profileImage: `${import.meta.env.BASE_URL}me_new.png`,
 
   education: {
@@ -1156,12 +1157,12 @@ function Contact() {
               <FileText size={16} /> Resume (PDF)
             </a>
             <a
-              href={DATA.resumeLink}
+              href={DATA.resumeDocx}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 border border-[#2e2e2e] hover:border-red-500/50 text-zinc-300 hover:text-red-400 font-semibold text-sm mono rounded-lg transition-all duration-200"
             >
-              <Terminal size={16} /> Open in Word (OneDrive)
+              <Terminal size={16} /> Download Word (.docx)
             </a>
           </div>
         </FadeIn>

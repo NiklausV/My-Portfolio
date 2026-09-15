@@ -210,5 +210,20 @@ line("Cloud & Infrastructure", "Vercel (serverless functions, cron, preview depl
 line("Data, Tools & Practices", "PostgreSQL, MongoDB, Stripe API, Clerk, n8n, REST APIs, Git/GitHub, Playwright, Vitest, "
      "Excel (pivot tables), Power BI (DAX) · data structures & algorithms, test-driven development, code review, agile delivery")
 
+# Modern Word compatibility (Word 2013+), so the file does not open in "Compatibility Mode".
+settings = doc.settings.element
+compat = settings.find(qn("w:compat"))
+if compat is None:
+    compat = OxmlElement("w:compat")
+    settings.append(compat)
+for cs in list(compat.findall(qn("w:compatSetting"))):
+    if cs.get(qn("w:name")) == "compatibilityMode":
+        compat.remove(cs)
+cs = OxmlElement("w:compatSetting")
+cs.set(qn("w:name"), "compatibilityMode")
+cs.set(qn("w:uri"), "http://schemas.microsoft.com/office/word")
+cs.set(qn("w:val"), "15")
+compat.append(cs)
+
 doc.save(OUT)
 print("saved", OUT)

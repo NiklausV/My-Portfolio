@@ -3,7 +3,7 @@
 > Personal portfolio built with **React 19 + Vite + Tailwind CSS v4 + Motion** — dark red theme, animated flow-field background, fully responsive.
 
 🌐 **Live:** [niklausv.github.io/My-Portfolio](https://niklausv.github.io/My-Portfolio/)
-📄 **Resume:** [PDF](https://niklausv.github.io/My-Portfolio/Mustafa-Hadi-Resume.pdf) · [Word (OneDrive)](https://1drv.ms/w/c/75B06AAA3EF144F3/ASt5R-A6lktPnSt23N11PJE?e=vZg6FC)
+📄 **Resume:** [PDF](https://niklausv.github.io/My-Portfolio/Mustafa-Hadi-Resume.pdf) · [Word (.docx)](https://niklausv.github.io/My-Portfolio/Mustafa-Hadi-Resume.docx)
 
 ---
 
@@ -144,6 +144,7 @@ The CV is generated from code so edits stay consistent between the Word file, th
 pip install python-docx
 python tools/build-cv.py "<path>/Mustafa Hadi CV.docx" 9.5 0.4     # body pt, side margin in
 powershell -File tools/docx2pdf.ps1 -Docx "<path>\Mustafa Hadi CV.docx" -Pdf "public\Mustafa-Hadi-Resume.pdf"
+copy "<path>\Mustafa Hadi CV.docx" public\Mustafa-Hadi-Resume.docx   # the site's Resume buttons serve public/ copies
 ```
 
 `docx2pdf.ps1` uses Microsoft Word (COM) on Windows and prints the page count; the resume is tuned to fit one page.
