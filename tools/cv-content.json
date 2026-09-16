@@ -1,0 +1,118 @@
+{
+  "name": "Mustafa Hadi",
+  "headline": "Software Engineer (Full-Stack, Cloud, Automation)  |  B.S. Software Engineering, WGU, Expected Jan 2027",
+  "location": "Clive, IA (Des Moines metro)",
+  "phone": "(515) 444-6495",
+  "email": "mustafahadi053@gmail.com",
+  "work_auth": "U.S. Citizen (no sponsorship required)",
+  "links": [
+    ["niklausv.github.io/My-Portfolio", "https://niklausv.github.io/My-Portfolio/"],
+    ["github.com/NiklausV", "https://github.com/NiklausV"],
+    ["linkedin.com/in/mustafa-hadi-0aa967312", "https://www.linkedin.com/in/mustafa-hadi-0aa967312/"]
+  ],
+  "availability": "Part-time now, full-time from Jan 2027 (internship or new-grad)  |  On-site, hybrid, or remote  |  Relocation within Iowa",
+
+  "summary": "Software engineering student (B.S. expected Jan 2027) seeking a Software Engineering internship in the Des Moines, Iowa metro or a new-grad role from Jan 2027. Shipping two production applications end to end, mistakes included, taught me to validate before building, test before shipping, keep safety gates on by default, and communicate early with non-technical stakeholders. I am grateful for that chance and want to join a team where I can learn its standards from senior engineers I look up to.",
+
+  "highlights": [
+    "1,628 unit tests passing",
+    "7,000+ records in PostgreSQL",
+    "3 production deployments",
+    "Client site + CMS delivered",
+    "1,400+ commits"
+  ],
+
+  "skills": {
+    "languages": ["TypeScript", "Java", "JavaScript", "Python", "SQL", "C++", "HTML/CSS"],
+    "frameworks": ["React", "Next.js", "Node.js", "Express", "Spring Boot", "Flask", "Tailwind CSS", "Socket.IO", "React Native", "scikit-learn", "Pandas"],
+    "cloud": [
+      "Vercel (serverless functions, cron, preview deploys)",
+      "Supabase (PostgreSQL, Auth, Row-Level Security, Realtime)",
+      "AWS (EC2, S3, IAM, Lambda)",
+      "Microsoft Azure (App Service, PostgreSQL, Entra ID, Blob Storage)",
+      "Docker",
+      "Linux",
+      "GitHub Actions (CI/CD)",
+      "Cloudflare DNS"
+    ],
+    "data_tools": ["PostgreSQL", "MySQL", "MongoDB", "REST APIs", "Webhooks", "Stripe API", "Clerk", "OpenAI/Anthropic APIs", "n8n", "Git/GitHub", "Vitest", "Playwright"],
+    "practices": ["Data Structures and Algorithms", "Object-Oriented Design", "Test-Driven Development", "Code Review", "Continuous Integration/Delivery (CI/CD)", "Agile/Scrum", "Documentation", "Security and Compliance"]
+  },
+
+  "experience": [
+    {
+      "title": "Software Engineer & Founder",
+      "company": "Vextora AI Solutions",
+      "location": "Clive, IA",
+      "period": "Apr 2026 - Present",
+      "subline": "AI-powered web presence and lead-generation platform for local service businesses; built and shipped end to end (400+ commits, 116/116 tests passing).",
+      "bullets": [
+        "Shipped a client website and admin content management system (CMS) in Next.js, TypeScript, and Supabase PostgreSQL with Row-Level Security; delivered Jun 2026 to an owner who now self-serves content.",
+        "Built a Python ingestion pipeline loading 7,000+ business records into PostgreSQL (5,714 in one batch) with deduplication precedence (place ID, phone, domain) and pagination past a 1,000-row API cap.",
+        "Modeled a 5-table PostgreSQL schema with a unique constraint preventing duplicate assignments; shipped a magic-link sales-rep portal with click-to-call logging, clickwrap e-signature, and Stripe webhook-verified payments.",
+        "Designed a Microsoft Azure architecture (App Service, Azure Database for PostgreSQL with pgvector, Entra External ID, Blob Storage) for a healthcare-adjacent client and evaluated AWS alternatives for cost and compliance."
+      ]
+    },
+    {
+      "title": "Lead Software Engineer & Founder",
+      "company": "IronOS",
+      "location": "Remote",
+      "period": "Apr 2026 - Present",
+      "subline": "SaaS platform for powerlifting coaches: AI content engine, lead capture, self-serve checkout, automated coach provisioning (1,000+ commits).",
+      "bullets": [
+        "Shipped self-serve checkout, webhook-driven coach provisioning, and an automated setup pipeline in Next.js, TypeScript, Supabase (PostgreSQL, Realtime), Clerk, and Stripe; 1,628 Vitest unit tests passing, 0 TypeScript errors.",
+        "Integrated OpenAI and Anthropic APIs into the AI content engine; built a monitoring dashboard (Next.js, Supabase Realtime, 4 views) and an agent-signals coordination bus for a 12-agent AI operations system.",
+        "Wrote a 15-rule security policy, rotated credentials, and hardened secrets handling; worked with a business partner on outreach and ran 20-minute demos and 60-90 minute setup calls with coaches."
+      ]
+    }
+  ],
+
+  "leadership": {
+    "heading": "Leadership",
+    "bullets": [
+      "Owned architecture, delivery, and client communication for 2 shipped products; scoped owner requests into testable features with deadlines.",
+      "Paused new features to run prospect interviews after seeing signs of building ahead of demand: validate before building.",
+      "Made safety the default after an early outreach misstep: default-deny send gate, server-side draft validation (HTTP 422), a 3-tier Telephone Consumer Protection Act (TCPA) and CAN-SPAM checklist (24 verified claims), and CLI scripts that dry-run by default.",
+      "Follow team standards: test-driven development, code review, atomic commits, preview and production environments, CI/CD, runbooks.",
+      "Led a 5-person coaching team serving 30+ athletes; coordinated a campaign that grew acquisition 250% (Powerlifting America)."
+    ]
+  },
+
+  "projects": [
+    {
+      "name": "AI Resume Screening Bot",
+      "stack": "Python, Flask, scikit-learn, PyPDF2, python-docx, React, Tailwind CSS",
+      "url": "github.com/NiklausV/Resume-Screening-Bot",
+      "bullets": [
+        "Implemented TF-IDF (term frequency-inverse document frequency) and cosine-similarity matching that improved match accuracy 65% and cut false positives 40%; parses PDF and DOCX in under 5 seconds; CI/CD to Vercel and Heroku."
+      ]
+    },
+    {
+      "name": "Chat Vibe",
+      "stack": "Next.js, Node.js, Express, Socket.IO, MongoDB, JSON Web Tokens (JWT), bcrypt, Nodemailer",
+      "url": "github.com/NiklausV/Chat-Vibe",
+      "bullets": [
+        "Built a real-time chat application with 99.9% message delivery reliability in testing; secured accounts with JWT authentication and bcrypt hashing, cutting unauthorized access attempts over 80% in testing."
+      ]
+    },
+    {
+      "name": "MyGit",
+      "stack": "Node.js, Express, React (Vite), Tailwind CSS, Commander.js, Chalk",
+      "url": "github.com/NiklausV/Own-Version-git",
+      "bullets": [
+        "Implemented Secure Hash Algorithm 1 (SHA-1) content-addressable storage with 100% file integrity in a cross-platform CLI; I/O caching made commits 45% faster and a REST API cut fetch latency 55%."
+      ]
+    }
+  ],
+
+  "education": {
+    "school": "Western Governors University",
+    "degree": "B.S. Software Engineering",
+    "right": "Expected Jan 2027",
+    "note": "Relevant Coursework: Data Structures and Algorithms, Object-Oriented Programming, Java Frameworks (Spring Boot), Back-End Programming, Web Development, Database Management (SQL), Python and C++, Version Control (Git)."
+  },
+
+  "certifications": [
+    "Harvard CS50 (Computer Science, Python, SQL) - Completed Dec 2024. Expected Jan 2027: AWS Certified Cloud Practitioner; CompTIA Project+; ITIL 4 Foundation; CIW JavaScript Specialist, User Interface Designer, Advanced HTML5/CSS3; WGU Certified Front-End and Back-End Developer"
+  ]
+}

@@ -1,4 +1,4 @@
-# Mustafa Hadi — Software Engineer · Founder, Vextora AI Solutions
+# Mustafa Hadi — Software Engineer (Full-Stack, Cloud, Automation)
 
 > Personal portfolio built with **React 19 + Vite + Tailwind CSS v4 + Motion** — dark red theme, animated flow-field background, fully responsive.
 
@@ -9,15 +9,15 @@
 
 ## 👋 Hi, I'm Mustafa Hadi
 
-**Founder & Software Engineer** · Clive, Iowa (Des Moines metro) · 🇺🇸 U.S. Citizen
+**Software Engineer** · Clive, Iowa (Des Moines metro) · 🇺🇸 U.S. Citizen
 
-I'm a WGU Software Engineering student (**B.S. expected Jan 2027**) who founded **Vextora AI Solutions** and **IronOS**. I ship production full-stack systems end to end: Next.js/TypeScript front ends, Supabase/PostgreSQL data models, Stripe billing, n8n automation, and cloud deployments on Vercel, AWS, and Azure.
+I'm a WGU Software Engineering student (**B.S. expected Jan 2027**) who designed, built, and shipped two production platforms, **Vextora AI Solutions** and **IronOS**, end to end: Next.js/TypeScript front ends, Supabase/PostgreSQL data models, Stripe billing, n8n automation, and cloud deployments on Vercel, AWS, and Azure.
 
 **🎯 Seeking a Software Engineering internship in Iowa for 2026–2027** (Des Moines metro, hybrid, or remote).
 
 ---
 
-## 🚀 Founder — Vextora AI Solutions (Apr 2026 – Present)
+## 🚀 Software Engineer & Founder — Vextora AI Solutions (Apr 2026 – Present)
 
 **What it is:** an AI-powered web presence and lead-generation agency for local service businesses. I design, build, deploy, and operate every layer — the product, the data, the automation, and the client relationship. Live: [vextora-ai-solutions.vercel.app](https://vextora-ai-solutions.vercel.app)
 
@@ -38,7 +38,7 @@ I'm a WGU Software Engineering student (**B.S. expected Jan 2027**) who founded 
 
 ---
 
-## 🏋️ Founder & Lead Engineer — IronOS (Apr 2026 – Present)
+## 🏋️ Lead Software Engineer & Founder — IronOS (Apr 2026 – Present)
 
 SaaS platform that gives powerlifting coaches an AI content engine, client onboarding, and subscription billing. Live: [ironos.dev](https://ironos.dev)
 
@@ -138,11 +138,11 @@ Open to Software Engineering internships in Iowa, plus collaborations and intere
 
 ## 📄 Regenerating the resume
 
-The CV is generated from code so edits stay consistent between the Word file, the PDF, and this site.
+The CV is generated from code so edits stay consistent between the Word file, the PDF, and this site. Edit the text in `tools/cv-content.json`; `tools/build-cv.py` handles the ATS-safe layout (single column, standard headings, ASCII punctuation).
 
 ```bash
 pip install python-docx
-python tools/build-cv.py "<path>/Mustafa Hadi CV.docx" 9.5 0.4     # body pt, side margin in
+python tools/build-cv.py "<path>/Mustafa Hadi CV.docx" 9.25 0.38   # body pt, side margin in; content comes from tools/cv-content.json
 powershell -File tools/docx2pdf.ps1 -Docx "<path>\Mustafa Hadi CV.docx" -Pdf "public\Mustafa-Hadi-Resume.pdf"
 copy "<path>\Mustafa Hadi CV.docx" public\Mustafa-Hadi-Resume.docx   # the site's Resume buttons serve public/ copies
 ```

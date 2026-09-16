@@ -33,7 +33,7 @@ for (const id of shots) {
 }
 // Sanity: text checks
 const text = await page.evaluate(() => document.body.innerText)
-for (const needle of ['Vextora AI Solutions', 'IronOS', 'Expected Jan 2027', 'Founder & Software Engineer', 'AI Team & Infrastructure', 'Azure', 'Resume (PDF)']) {
+for (const needle of ['Vextora AI Solutions', 'IronOS', 'Expected Jan 2027', 'Software Engineer & Founder', 'Lead Software Engineer & Founder', 'What building it taught me', 'Azure', 'Resume (PDF)']) {
   console.log(text.includes(needle) ? 'OK  ' : 'MISS', needle)
 }
 const pdf = await page.request.get(url + 'Mustafa-Hadi-Resume.pdf')

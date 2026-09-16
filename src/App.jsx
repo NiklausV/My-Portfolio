@@ -24,17 +24,17 @@ const LinkedinIcon = ({ size = 20 }) => (
 // ─── Data ────────────────────────────────────────────────────────────────────
 const DATA = {
   name: "Mustafa Hadi",
-  role: "Founder · Software Engineer",
-  roleAlt: "Founder, Vextora AI Solutions",
-  tagline: "Founder of Vextora AI Solutions and IronOS. I ship production full-stack systems with Next.js, TypeScript, Supabase, and Stripe on Vercel, AWS, and Azure. Seeking a Software Engineering internship in Iowa for 2026–2027.",
+  role: "Software Engineer",
+  roleAlt: "Full-Stack · Cloud · Automation",
+  tagline: "Software engineering student (WGU, B.S. expected Jan 2027) who designed, built, and shipped two production platforms with Next.js, TypeScript, Supabase, and Stripe on Vercel, AWS, and Azure. Seeking a Software Engineering internship in Iowa where I can learn from senior engineers and grow with a team.",
   email: "Mustafahadi053@gmail.com",
   phone: "+1 (515) 444-6495",
   location: "Clive, Iowa (Des Moines metro)",
   github: "https://github.com/NiklausV",
   linkedin: "https://www.linkedin.com/in/mustafa-hadi-0aa967312/",
-  resumeLink: `${import.meta.env.BASE_URL}Mustafa-Hadi-Resume.pdf?v=20260915b`,
-  resumePdf: `${import.meta.env.BASE_URL}Mustafa-Hadi-Resume.pdf?v=20260915b`,
-  resumeDocx: `${import.meta.env.BASE_URL}Mustafa-Hadi-Resume.docx?v=20260915b`,
+  resumeLink: `${import.meta.env.BASE_URL}Mustafa-Hadi-Resume.pdf?v=20260916`,
+  resumePdf: `${import.meta.env.BASE_URL}Mustafa-Hadi-Resume.pdf?v=20260916`,
+  resumeDocx: `${import.meta.env.BASE_URL}Mustafa-Hadi-Resume.docx?v=20260916`,
   profileImage: `${import.meta.env.BASE_URL}me_new.png`,
 
   education: {
@@ -72,11 +72,11 @@ const DATA = {
 
   founder: {
     company: "Vextora AI Solutions",
-    title: "Founder & Software Engineer",
+    title: "Software Engineer & Founder",
     period: "Apr 2026 – Present",
     location: "Des Moines, Iowa",
     site: "https://vextora-ai-solutions.vercel.app",
-    pitch: "An AI-powered web presence and lead-generation agency for local service businesses. I design, build, deploy, and operate every layer — the product, the data, the automation, and the client relationship.",
+    pitch: "An AI-powered web presence and lead-generation platform for local service businesses that I designed, built, and shipped end to end: product, data, automation, and client delivery. Building it taught me more about engineering discipline than anything else I have done.",
     stats: [
       { value: "7,000+", label: "leads modeled in the CRM" },
       { value: "1st", label: "paying client closed & delivered" },
@@ -97,15 +97,22 @@ const DATA = {
       { title: "Data modeling", text: "Multi-tenant PostgreSQL with dedupe precedence and event tables that feed dashboards and reports." },
       { title: "Automation mindset", text: "If a task repeats, I script it with n8n, cron, or Node/Python, and I add a safety gate." },
       { title: "Compliance awareness", text: "TCPA / CAN-SPAM checklist, consent records, and clickwrap acceptance logs built into the product." }
+    ],
+    lessons: [
+      "Validate before building: I paused new-feature work to run prospect interviews after recognizing I was building ahead of demand.",
+      "Safety by default: after an early outreach misstep, every outbound path now ships disabled behind a default-deny gate and a compliance checklist.",
+      "Test before shipping: 1,628 unit tests on one codebase and 116 on another, with zero TypeScript errors at ship.",
+      "Communicate early: requirement sessions, demos, and setup calls taught me to turn what an owner says into scoped, testable work.",
+      "Grateful for the chance to build this, and looking to bring that discipline to a team where I can learn from engineers I look up to."
     ]
   },
 
   experience: [
     {
-      title: "Founder & Software Engineer",
+      title: "Software Engineer & Founder",
       company: "Vextora AI Solutions",
       period: "Apr 2026 – Present",
-      description: "AI-powered web presence and lead-generation agency for local service businesses. Built the product, the data platform, the automation, and closed the first paying client.",
+      description: "AI-powered web presence and lead-generation platform for local service businesses. Designed, built, and shipped the product, data platform, and automation; delivered a client website and CMS in Jun 2026.",
       highlights: [
         "Shipped production client sites + admin CMS with Next.js, TypeScript, Tailwind, and Supabase on Vercel",
         "Designed a multi-tenant PostgreSQL schema behind a 7,000+ lead CRM with Python scraping and dedupe",
@@ -116,10 +123,10 @@ const DATA = {
       skills: ["Next.js","TypeScript","Supabase","PostgreSQL","Stripe","n8n","Vercel","Azure","Python"]
     },
     {
-      title: "Founder & Lead Engineer",
+      title: "Lead Software Engineer & Founder",
       company: "IronOS",
       period: "Apr 2026 – Present",
-      description: "SaaS platform that gives powerlifting coaches an AI content engine, client onboarding, and subscription billing. Own the codebase, infrastructure, and security.",
+      description: "SaaS platform that gives powerlifting coaches an AI content engine, client onboarding, and subscription billing. Built and shipped the codebase, infrastructure, and security practices, working with a business partner focused on outreach.",
       highlights: [
         "Built in Next.js / TypeScript with Supabase, Clerk auth, and Stripe subscriptions across 1,000+ commits",
         "Shipped self-serve checkout, webhook-driven coach provisioning, and automated setup pipelines",
@@ -170,7 +177,7 @@ const DATA = {
     {
       title: "Vextora AI Solutions Platform",
       featured: true,
-      role: "Founder & Software Engineer · Apr 2026 – Present · In production",
+      role: "Software Engineer & Founder · Apr 2026 – Present · In production",
       description: "The agency's production platform: marketing site, client websites, admin CMS, CRM, sales-rep portal, and an automation layer, serving real client businesses, sales reps, and admins.",
       techStack: ["Next.js","TypeScript","Tailwind CSS","Supabase","PostgreSQL","Stripe","Resend","Calendly API","n8n","Docker","Vercel","Python","Playwright"],
       data: ["Supabase PostgreSQL, multi-tenant with RLS","7,000+ lead records with dedupe precedence","Roles: client owners, sales reps, admins","Deals, contracts, commissions, activity events","Stripe live catalog + verified webhooks"],
@@ -184,7 +191,7 @@ const DATA = {
     {
       title: "IronOS",
       featured: true,
-      role: "Founder & Lead Engineer · Apr 2026 – Present · In production",
+      role: "Lead Software Engineer & Founder · Apr 2026 – Present · In production",
       description: "SaaS for powerlifting coaches: AI content engine, lead capture, DM scripts, self-serve checkout, and automated coach provisioning, with paying-customer infrastructure and a 12-agent AI operations team.",
       techStack: ["Next.js","TypeScript","Supabase","PostgreSQL","Clerk","Stripe","OpenAI API","Anthropic API","Vitest","Vercel"],
       data: ["Supabase PostgreSQL with Realtime","Coaches, clients, setup orders, voice profiles","Agent activity log + agent-signals bus","Clerk auth · Stripe subscriptions + webhooks","1,000+ commits · 1,600+ automated tests"],
@@ -362,7 +369,7 @@ function Hero({ scrollTo }) {
   const { scrollY } = useScroll()
   const y = useTransform(scrollY, [0, 400], [0, -80])
 
-  const typewriterPhrases = ["Software Engineer", "Founder, Vextora AI Solutions", "Full-Stack Developer", "Cloud & Automation Builder"]
+  const typewriterPhrases = ["Software Engineer", "Full-Stack Developer", "Cloud & Automation Builder", "Always Learning"]
   const [phraseIdx, setPhraseIdx] = useState(0)
   const [displayed, setDisplayed] = useState('')
   const [typing, setTyping] = useState(true)
@@ -585,7 +592,7 @@ function Founder() {
     <section id="founder" className="py-28 px-6">
       <div className="max-w-6xl mx-auto">
         <FadeIn className="text-center mb-14">
-          <SectionLabel>Founder</SectionLabel>
+          <SectionLabel>Founder Experience</SectionLabel>
           <h2 className="text-4xl md:text-5xl font-black mt-4 mb-3">{f.company}</h2>
           <p className="mono text-sm text-red-400 mb-4">{f.title} · {f.period} · {f.location}</p>
           <p className="text-zinc-400 max-w-2xl mx-auto leading-relaxed">{f.pitch}</p>
@@ -646,6 +653,26 @@ function Founder() {
                   <div key={w.title} className="p-3 bg-[#111111] rounded-lg border border-[#222222]">
                     <p className="text-sm text-white font-semibold mb-1">{w.title}</p>
                     <p className="text-xs text-zinc-500 leading-relaxed">{w.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </FadeIn>
+
+          {/* Lessons learned */}
+          <FadeIn delay={0.3} className="lg:col-span-2">
+            <div className="p-6 bg-[#0d0d0d] border border-[#1c1c1c] rounded-xl hover:border-red-500/20 transition-all duration-300">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="p-2 bg-red-500/10 rounded-lg">
+                  <GraduationCap size={20} className="text-red-500" />
+                </div>
+                <h3 className="font-bold text-lg">What building it taught me</h3>
+              </div>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {f.lessons.map((l, i) => (
+                  <div key={i} className="flex items-start gap-2 p-3 bg-[#111111] rounded-lg border border-[#222222]">
+                    <span className="text-red-500 mt-0.5 shrink-0">▹</span>
+                    <p className="text-sm text-zinc-300 leading-relaxed">{l}</p>
                   </div>
                 ))}
               </div>
